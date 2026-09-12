@@ -12,7 +12,7 @@
 
 <header class="hero">
   <div class="hero-inner">
-    <div class="hero-kicker">France &nbsp;&rarr;&nbsp; Victoria, British Columbia</div>
+    <div class="hero-kicker">France &nbsp;&rarr;&nbsp; Victoria, British Columbia &nbsp;&middot;&nbsp; <a href="index-fr.html" style="color:inherit;">Français</a></div>
     <h1>My Canada Page</h1>
     <p class="hero-sub">"Life is like a book, and we only ever have it open at one page. Going to Canada, I get to turn to another one."</p>
   </div>
@@ -66,6 +66,15 @@
       <div class="date">July</div>
       <h2>Meeting Marco before I even left</h2>
       <p>Marco, from Carmen and Flavio's family, was in Europe that month to see his grandfather in Switzerland. His dad drove him down to a camp near Dijon, run by a place called Maison de Courcelles, and that's where our two families finally got to meet. It was in a campground. Main event was an accrobranche, ropes course in the trees, and I loved it. Got along well with the other kids there too, there was a small pool, and we played a ridiculous amount of board games.</p>
+    </div>
+
+    <div class="entry">
+      <div class="date">July</div>
+      <h2>A video, for the record</h2>
+      <p>Right after the camp, I recorded a video explaining the whole project, in English, and saying I'd cook some recipes from home once I got to Canada. Half of the point was just to see how much my English changes over the next few months.</p>
+      <div class="video-embed">
+        <iframe src="https://www.youtube.com/embed/_L7B_IVe_us" title="Anatole introduces his exchange project" allowfullscreen></iframe>
+      </div>
     </div>
 
     <div class="entry">
@@ -150,6 +159,24 @@
 <footer>
   A private story for family and friends &middot; more chapters to come
 </footer>
+
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close">&times;</span>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+  document.querySelectorAll('.photo').forEach(function(img) {
+    img.addEventListener('click', function() {
+      document.getElementById('lightbox-img').src = this.src;
+      document.getElementById('lightbox-img').alt = this.alt;
+      document.getElementById('lightbox').classList.add('open');
+    });
+  });
+  document.getElementById('lightbox').addEventListener('click', function() {
+    this.classList.remove('open');
+  });
+</script>
 
 </body>
 </html>

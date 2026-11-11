@@ -1,0 +1,22 @@
+/* Extra styles for the Mercantour hike pages. Uses the palette of style.css */
+:root{--mv-moss:var(--deep-moss,#2f4a3a);--mv-tide:var(--tide,#2f6f86);--mv-paper:var(--paper,#faf7f0);--mv-line:var(--line,#d9d2c3)}
+body.mv{background:var(--mv-paper);color:#2a2a26;font-family:'Source Sans 3',system-ui,sans-serif;line-height:1.65;margin:0}
+.mv-nav{max-width:720px;margin:0 auto;padding:18px 20px 0;font-size:.95rem;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.mv-nav a{color:var(--mv-tide);text-decoration:none;border-bottom:1px solid var(--mv-line)}
+.mv-hero{max-width:720px;margin:0 auto;padding:36px 20px 8px}
+.mv-hero .kicker{letter-spacing:.14em;text-transform:uppercase;font-size:.78rem;color:var(--mv-tide)}
+.mv-hero h1{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:2.3rem;line-height:1.15;color:var(--mv-moss);margin:.3em 0}
+.mv-hero p{font-size:1.1rem;color:#4a4a42}
+.mv-main{max-width:720px;margin:0 auto;padding:0 20px 60px}
+.mv-main .entry{border-top:1px solid var(--mv-line);padding-top:28px;margin-top:28px}
+.mv-main .date{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mv-tide)}
+.mv-main h2{font-family:'Fraunces',Georgia,serif;color:var(--mv-moss);font-size:1.5rem;margin:.2em 0 .5em}
+.mv-main .photo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px;margin:18px 0}
+.mv-main .photo-grid.single{grid-template-columns:1fr}
+.mv-main .photo{width:100%;height:auto;border-radius:6px;cursor:zoom-in;display:block}
+.mv-main .caption{font-size:.9rem;color:#6a6a60;font-style:italic;margin-top:-8px}
+.mv-main .video-embed{position:relative;aspect-ratio:16/9;margin:18px 0}
+.mv-main .video-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:6px}
+.mv-main .pull{font-family:'Fraunces',Georgia,serif;font-size:1.25rem;color:var(--mv-moss);border-left:3px solid var(--mv-tide);padding:4px 0 4px 16px;margin:28px 0}
+.mv-lb{position:fixed;inset:0;background:rgba(0,0,0,.88);display:none;align-items:center;justify-content:center;z-index:99;cursor:zoom-out}
+.mv-lb.on{display:flex}.mv-lb img{max-width:94vw;max-height:92vh;border-radius:4px}
